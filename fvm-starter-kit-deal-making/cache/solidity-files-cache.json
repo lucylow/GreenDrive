@@ -1,0 +1,934 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/contracts/DealClient.sol": {
+      "lastModificationDate": 1712336507028,
+      "contentHash": "5a02643aec60da0f17158f8d34fad032",
+      "sourceName": "contracts/DealClient.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@zondax/filecoin-solidity/contracts/v0.8/MarketAPI.sol",
+        "@zondax/filecoin-solidity/contracts/v0.8/types/CommonTypes.sol",
+        "@zondax/filecoin-solidity/contracts/v0.8/types/MarketTypes.sol",
+        "@zondax/filecoin-solidity/contracts/v0.8/types/AccountTypes.sol",
+        "@zondax/filecoin-solidity/contracts/v0.8/types/CommonTypes.sol",
+        "@zondax/filecoin-solidity/contracts/v0.8/cbor/AccountCbor.sol",
+        "@zondax/filecoin-solidity/contracts/v0.8/cbor/MarketCbor.sol",
+        "@zondax/filecoin-solidity/contracts/v0.8/cbor/BytesCbor.sol",
+        "@zondax/solidity-bignumber/src/BigNumbers.sol",
+        "@zondax/filecoin-solidity/contracts/v0.8/utils/BigInts.sol",
+        "solidity-cborutils/contracts/CBOR.sol",
+        "@zondax/filecoin-solidity/contracts/v0.8/utils/Misc.sol",
+        "@zondax/filecoin-solidity/contracts/v0.8/utils/FilAddresses.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "DealClient"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/MarketAPI.sol": {
+      "lastModificationDate": 1712336564720,
+      "contentHash": "1d0cdfc002dd78d254f9e6edff2fa2b9",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/MarketAPI.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./types/MarketTypes.sol",
+        "./cbor/MarketCbor.sol",
+        "./cbor/BytesCbor.sol",
+        "./cbor/FilecoinCbor.sol",
+        "./types/CommonTypes.sol",
+        "./utils/Misc.sol",
+        "./utils/Actor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "MarketAPI"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/types/AccountTypes.sol": {
+      "lastModificationDate": 1712336568286,
+      "contentHash": "d693659b1f08bc2323b4f9cb284b031e",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/types/AccountTypes.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./CommonTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "AccountTypes"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/solidity-cborutils/contracts/CBOR.sol": {
+      "lastModificationDate": 1712336562190,
+      "contentHash": "f6fe9c5e14ab5496490b8d36007fdffd",
+      "sourceName": "solidity-cborutils/contracts/CBOR.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@ensdomains/buffer/contracts/Buffer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "CBOR"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/solidity-bignumber/src/BigNumbers.sol": {
+      "lastModificationDate": 1712336558107,
+      "contentHash": "3b94cc598843fa8ed15ba155798e7cf6",
+      "sourceName": "@zondax/solidity-bignumber/src/BigNumbers.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.17"
+      ],
+      "artifacts": [
+        "BigNumbers"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/types/MarketTypes.sol": {
+      "lastModificationDate": 1712336568290,
+      "contentHash": "964704aa62c2c94c80bb13ac10ab8d11",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/types/MarketTypes.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../cbor/BigIntCbor.sol",
+        "./CommonTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "MarketTypes"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/types/CommonTypes.sol": {
+      "lastModificationDate": 1712336568288,
+      "contentHash": "62cfe249ca6dce903adfdaad4e48250a",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/types/CommonTypes.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "CommonTypes"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/cbor/AccountCbor.sol": {
+      "lastModificationDate": 1712336568284,
+      "contentHash": "61ae65086bc0bce1efd0e7d162f26bfb",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/cbor/AccountCbor.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "solidity-cborutils/contracts/CBOR.sol",
+        "../types/AccountTypes.sol",
+        "../utils/CborDecode.sol",
+        "../utils/Misc.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "AccountCBOR"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/cbor/BytesCbor.sol": {
+      "lastModificationDate": 1712336568284,
+      "contentHash": "1be7854e3a5f93a5d85fbd230286c86b",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/cbor/BytesCbor.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "solidity-cborutils/contracts/CBOR.sol",
+        "../utils/CborDecode.sol",
+        "../utils/Misc.sol",
+        "../types/CommonTypes.sol",
+        "./BigIntCbor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "BytesCBOR"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/utils/BigInts.sol": {
+      "lastModificationDate": 1712336568311,
+      "contentHash": "48f5e47db18a80bb5d21853a5e479018",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/utils/BigInts.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@zondax/solidity-bignumber/src/BigNumbers.sol",
+        "../types/CommonTypes.sol",
+        "../utils/Misc.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "BigInts"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/cbor/MarketCbor.sol": {
+      "lastModificationDate": 1712336568286,
+      "contentHash": "6614b36999b279af5ca132ac4f188f21",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/cbor/MarketCbor.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "solidity-cborutils/contracts/CBOR.sol",
+        "../types/MarketTypes.sol",
+        "../types/CommonTypes.sol",
+        "../utils/Misc.sol",
+        "../utils/FilAddresses.sol",
+        "../utils/CborDecode.sol",
+        "./FilecoinCbor.sol",
+        "./BigIntCbor.sol",
+        "./FilecoinCbor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "MarketCBOR"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/utils/Misc.sol": {
+      "lastModificationDate": 1712336568314,
+      "contentHash": "203eaf81988013e6bf28d4e968eedf96",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/utils/Misc.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../types/CommonTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "Misc"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/utils/FilAddresses.sol": {
+      "lastModificationDate": 1712336568313,
+      "contentHash": "155f18da0a54d4ae57c98aa54a653796",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/utils/FilAddresses.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../types/CommonTypes.sol",
+        "../utils/Leb128.sol",
+        "@ensdomains/buffer/contracts/Buffer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "FilAddresses"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/utils/Actor.sol": {
+      "lastModificationDate": 1712336568313,
+      "contentHash": "a7b90b6371e78432509d40f472b937f5",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/utils/Actor.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./Misc.sol",
+        "../types/CommonTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "Actor"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/cbor/FilecoinCbor.sol": {
+      "lastModificationDate": 1712336568286,
+      "contentHash": "c2caf4a67838c3798a3bc97655d5722c",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/cbor/FilecoinCbor.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "solidity-cborutils/contracts/CBOR.sol",
+        "@ensdomains/buffer/contracts/Buffer.sol",
+        "../utils/CborDecode.sol",
+        "../utils/Misc.sol",
+        "../types/CommonTypes.sol",
+        "../cbor/BigIntCbor.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "FilecoinCBOR"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/utils/CborDecode.sol": {
+      "lastModificationDate": 1712336568314,
+      "contentHash": "1414e23b1c105ad5e21cfbf711612240",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/utils/CborDecode.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "CBORDecoder"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/cbor/BigIntCbor.sol": {
+      "lastModificationDate": 1712336568284,
+      "contentHash": "26f7fa08119b4c202ea314cfa584d369",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/cbor/BigIntCbor.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../types/CommonTypes.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "BigIntCBOR"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@ensdomains/buffer/contracts/Buffer.sol": {
+      "lastModificationDate": 1712336556754,
+      "contentHash": "d3d00f20f206848f1e90d596ebcc557b",
+      "sourceName": "@ensdomains/buffer/contracts/Buffer.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "Buffer"
+      ]
+    },
+    "/Users/llow/Desktop/Filecoin GreenDrive April 7/CODE/fvm-starter-kit-deal-making-main/fvm-starter-kit-deal-making/node_modules/@zondax/filecoin-solidity/contracts/v0.8/utils/Leb128.sol": {
+      "lastModificationDate": 1712336568314,
+      "contentHash": "0d508965d24ad8d151c2868649079fd3",
+      "sourceName": "@zondax/filecoin-solidity/contracts/v0.8/utils/Leb128.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000,
+            "details": {
+              "yul": false
+            }
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@ensdomains/buffer/contracts/Buffer.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "Leb128"
+      ]
+    }
+  }
+}
