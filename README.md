@@ -34,7 +34,7 @@ We welcome contributions from developers, researchers, and environmental enthusi
 
 ## Support
 
-For any technical questions, issues, or feedback regarding GreenDrive's Data Marketplace, please contact our support team at support@greendrive.com. We're here to assist you with any inquiries or concerns you may have.
+For any technical questions, issues, or feedback regarding GreenDrive's Data Marketplace, please contact our support team. We're here to assist you with any inquiries or concerns you may have.
 
 ## License
 
